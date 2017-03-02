@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IMoocProject.iml" filepath="$PROJECT_DIR$/IMoocProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleViewPlayer-app/SimpleViewPlayer-app.iml" filepath="$PROJECT_DIR$/SimpleViewPlayer-app/SimpleViewPlayer-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/project01/project01.iml" filepath="$PROJECT_DIR$/project01/project01.iml" />
     </modules>

@@ -1,26 +1,28 @@
-package com.yitong.simpleviewplayer.widget;
+package bruce.chang.project01;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.VideoView;
 
 /**
- * date：2017/2/14
- * des：自定义VideoView,切换横屏时可以全屏播放
- * Create by suqi
+ * Created by: BruceChang
+ * Date on : 2017/3/2.
+ * Time on: 10:24
+ * Progect_Name:IMoocProject
+ * Source Github：
+ * Description:
  */
 
 public class CustomVideoView extends VideoView {
-
     private int defaultWidth;
     private int defaultHeight;
 
     public CustomVideoView(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public CustomVideoView(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public CustomVideoView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -31,6 +33,7 @@ public class CustomVideoView extends VideoView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int width = getDefaultSize(defaultWidth, widthMeasureSpec);
         int height = getDefaultSize(defaultHeight, heightMeasureSpec);
         setMeasuredDimension(width, height);

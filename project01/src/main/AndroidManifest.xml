@@ -8,22 +8,26 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--屏幕方向软键盘-->
-        <activity android:name=".MainActivity2"
+        <activity
+            android:name=".CustomVideoViewActivity"
 
-            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            >
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".VideoViewActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
     </application>
 
 </manifest>

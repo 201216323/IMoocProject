@@ -4,33 +4,38 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bruce.chang.project01.MainActivity">
+    tools:context="bruce.chang.project01.VideoViewActivity">
 
     <RelativeLayout
         android:id="@+id/video_layout"
         android:layout_width="match_parent"
         android:layout_height="240dp">
 
-        <VideoView
+        <bruce.chang.project01.CustomVideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
             android:layout_height="240dp" />
+
+        <include layout="@layout/center_progress" />
 
         <LinearLayout
             android:id="@+id/controlarbar_layout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <SeekBar
                 android:id="@+id/play_seek"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="8dp"
                 android:layout_marginLeft="-20dp"
                 android:layout_marginRight="-20dp"
                 android:indeterminate="false"
                 android:max="100"
+                android:paddingBottom="0dp"
+                android:paddingTop="3dp"
                 android:progress="10"
                 android:progressDrawable="@drawable/seekbar_style2"
                 android:thumb="@null" />
@@ -125,10 +130,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
+                        android:padding="5dp"
                         android:src="@drawable/full_screen" />
                 </LinearLayout>
             </RelativeLayout>
 
         </LinearLayout>
     </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btNextAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="跳转页面，测试生命周期" />
 </RelativeLayout>

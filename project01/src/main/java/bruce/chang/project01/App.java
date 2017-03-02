@@ -1,16 +1,8 @@
-package com.yitong.simpleviewplayer;
+package bruce.chang.project01;
 
 import android.app.Application;
 
-import com.yitong.simpleviewplayer.utils.CacheFileUtils;
-import com.yitong.simpleviewplayer.utils.DensityUtils;
-
-/**
- * date：2017/2/13
- * des：
- * Create by suqi
- * Copyright (c) 2016 Shanghai P&C Information Technology Co., Ltd.
- */
+import bruce.chang.project01.utils.CacheFileUtils;
 
 public class App extends Application {
 
@@ -20,8 +12,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mApp = this;
-
-        DensityUtils.init(mApp);
         CacheFileUtils.initFiles();
         CacheFileUtils.copyAssetsFilesToSD(mApp, "video", CacheFileUtils.empVideoPath);
     }

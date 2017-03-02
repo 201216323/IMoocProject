@@ -1,1 +1,1 @@
-include ':app', ':project01'
+include ':app', ':project01', ':SimpleViewPlayer-app'
