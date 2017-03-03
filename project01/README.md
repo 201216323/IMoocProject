@@ -3,13 +3,13 @@
 
 ### 主界面
 
-<img src="https://github.com/201216323/IMoocProject/screen/test_01.png" alt="screenshot" width="270" height="486" />
+<img src="/IMoocProject/screen/test_01.png" alt="screenshot" width="270" height="486" />
 
 ### 当手指离开屏幕一段时间后，控制暂停和播放进度的控制台自动隐藏
-<img src="https://github.com/201216323/IMoocProject/screen/test_02.png" alt="screenshot" width="270" height="486" />
+<img src="/IMoocProject/screen/test_02.png" alt="screenshot" width="270" height="486" />
 
 ### 全屏播放
-<img src="https://github.com/201216323/IMoocProject/screen/test_03.png" alt="screenshot" width="486" height="270" />
+<img src="/IMoocProject/screen/test_03.png" alt="screenshot" width="486" height="270" />
 
 ### 介绍一下技术点：
 #### 全屏播放 - 横竖屏切换
